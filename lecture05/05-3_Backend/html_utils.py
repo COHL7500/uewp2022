@@ -50,7 +50,7 @@ class HTML_Utils:
             file = ex
         return file
 
-
+    
     def show_db_records(filepath: str = "./html/records.html") -> str:
 
         """A static method to show all records available in an SQLite database into an HTML template.
@@ -77,7 +77,7 @@ class HTML_Utils:
                 table += "                <td>"
                 table += str(item)
                 table += "</td>\n"
-            table += "            </tr>"
+            table += "        </tr>"
 
         # Replace the dynamic variable `{{students_records}}` in the HTML 
         # template file by the Python variable `table`.
